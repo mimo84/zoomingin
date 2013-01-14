@@ -1,0 +1,49 @@
+/**
+* In this file we put all the typography
+* settings.
+*/
+
+// Headings
+
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $heading-font-family;
+	font-weight: 700;
+}
+
+h1 {
+  @include adjust-font-size-to(42px);
+}
+
+h2 {
+  @include adjust-font-size-to(39px);
+}
+h3 {
+  @include adjust-font-size-to(34px);
+}
+h4 {
+  @include adjust-font-size-to(29px);
+}
+h5 {
+  @include adjust-font-size-to(24px);
+}
+h6 {
+  @include adjust-font-size-to(18px);
+}
+
+p {
+	font-family: $body-font-family;
+	font-weight: 500;
+	@include adjust-font-size-to(14px);
+}
+strong {
+	font-weight: 700;
+}
+em {
+	font-style: italic;
+}
+
