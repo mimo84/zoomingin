@@ -35,6 +35,15 @@ h6 {
   @include adjust-font-size-to(18px);
 }
 
+h1.title {
+	@include adjust-font-size-to(46px);
+	border-bottom: 1px solid $main-color;
+}
+code {
+	font-family: $monospace-font-family;
+	background-color: $main-color;
+	color: $white;
+}
 p {
 	font-family: $body-font-family;
 	font-weight: 500;
