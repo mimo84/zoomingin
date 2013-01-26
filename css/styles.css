@@ -150,20 +150,23 @@ h1.title {
   line-height: 1.56522em;
   border-bottom: 1px solid #27aae1;
   color: #27aae1;
-  text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
   text-shadow: #e5e7ea 1px 2px 1px;
 }
+/* line 46, ../sass/_typography.scss */
+h1.title a {
+  border: none;
+}
 
-/* line 48, ../sass/_typography.scss */
+/* line 50, ../sass/_typography.scss */
 code {
   font-family: "PT Mono", sans-serif;
   background-color: #27aae1;
   color: white;
 }
 
-/* line 53, ../sass/_typography.scss */
+/* line 55, ../sass/_typography.scss */
 p {
   font-family: "Libre Baskerville", serif;
   font-weight: 500;
@@ -172,7 +175,7 @@ p {
   color: #383838;
 }
 
-/* line 59, ../sass/_typography.scss */
+/* line 61, ../sass/_typography.scss */
 a {
   font-family: "Libre Baskerville", serif;
   color: inherit;
@@ -180,18 +183,18 @@ a {
   border-bottom: 1px dotted #27aae1;
 }
 
-/* line 65, ../sass/_typography.scss */
+/* line 67, ../sass/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 68, ../sass/_typography.scss */
+/* line 70, ../sass/_typography.scss */
 em {
   font-style: italic;
 }
 
 /* Variations on the color */
-/* line 73, ../sass/_typography.scss */
+/* line 75, ../sass/_typography.scss */
 .text-complementar {
   color: #ff4140;
 }

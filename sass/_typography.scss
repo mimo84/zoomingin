@@ -40,10 +40,12 @@ h1.title {
 	@include adjust-font-size-to(46px);
 	border-bottom: 1px solid $main-color;
 	color: $main-color;
-	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	@include text-shadow($grey 1px 2px 1px);
+	a {
+		border: none;
+	}
 }
 code {
 	font-family: $monospace-font-family;
