@@ -67,78 +67,104 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 * In this file we put all the base variables,
 * such as colors, font stacks, etc.
 */
+/* line 4, ../sass/_personalMixin.scss */
+* ::-webkit-selection {
+  color: #27aae1;
+  background: white;
+}
+/* line 4, ../sass/_personalMixin.scss */
+* ::-moz-selection {
+  color: #27aae1;
+  background: white;
+}
+/* line 4, ../sass/_personalMixin.scss */
+* ::-o-selection {
+  color: #27aae1;
+  background: white;
+}
+/* line 4, ../sass/_personalMixin.scss */
+* ::selection {
+  color: #27aae1;
+  background: white;
+}
+
 /**
 * In this file we put all the typography
 * settings.
 */
-/* line 8, ../sass/_typography.scss */
+/* line 7, ../sass/_typography.scss */
 html {
   font-size: 100%;
   line-height: 1.5em;
 }
 
-/* line 13, ../sass/_typography.scss */
+/* line 11, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
 }
 
-/* line 18, ../sass/_typography.scss */
+/* line 15, ../sass/_typography.scss */
 h1 {
   font-size: 2.8em;
   line-height: 1.14286em;
 }
 
-/* line 22, ../sass/_typography.scss */
+/* line 19, ../sass/_typography.scss */
 h2 {
   font-size: 2.6em;
   line-height: 1.23077em;
 }
 
-/* line 25, ../sass/_typography.scss */
+/* line 22, ../sass/_typography.scss */
 h3 {
   font-size: 2.26667em;
   line-height: 1.41176em;
 }
 
-/* line 28, ../sass/_typography.scss */
+/* line 25, ../sass/_typography.scss */
 h4 {
   font-size: 1.93333em;
   line-height: 1.65517em;
 }
 
-/* line 31, ../sass/_typography.scss */
+/* line 28, ../sass/_typography.scss */
 h5 {
   font-size: 1.6em;
   line-height: 2em;
 }
 
-/* line 34, ../sass/_typography.scss */
+/* line 31, ../sass/_typography.scss */
 h6 {
   font-size: 1.2em;
   line-height: 1.33333em;
 }
 
-/* line 38, ../sass/_typography.scss */
+/* line 35, ../sass/_typography.scss */
 h1.title {
   font-size: 3.06667em;
   line-height: 1.56522em;
   border-bottom: 1px solid #27aae1;
 }
 
-/* line 42, ../sass/_typography.scss */
+/* line 39, ../sass/_typography.scss */
 code {
   font-family: "PT Mono", sans-serif;
   background-color: #27aae1;
   color: white;
 }
 
-/* line 47, ../sass/_typography.scss */
+/* line 44, ../sass/_typography.scss */
 p {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 500;
   font-size: 0.93333em;
   line-height: 1.71429em;
+}
+
+/* line 49, ../sass/_typography.scss */
+a {
+  font-family: "Libre Baskerville", serif;
 }
 
 /* line 52, ../sass/_typography.scss */
@@ -151,8 +177,8 @@ em {
   font-style: italic;
 }
 
-/* line 12, ../sass/_grid.scss */
-.page {
+/* line 10, ../sass/_grid.scss */
+.container {
   *zoom: 1;
   max-width: 34em;
   _width: 34em;
@@ -162,61 +188,73 @@ em {
   margin-right: auto;
 }
 /* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.page:after {
+.container:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (min-width: 55.3125em) {
-  /* line 12, ../sass/_grid.scss */
-  .page {
+  /* line 10, ../sass/_grid.scss */
+  .container {
     max-width: 59em;
   }
 }
 
 @media (min-width: 55.3125em) {
-  /* line 19, ../sass/_grid.scss */
+  /* line 17, ../sass/_grid.scss */
   .banner {
     padding-left: 16.94915%;
   }
 
-  /* line 20, ../sass/_grid.scss */
+  /* line 18, ../sass/_grid.scss */
   .pagenav {
     width: 15.25424%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 21, ../sass/_grid.scss */
+  /* line 19, ../sass/_grid.scss */
   .main {
     width: 83.05085%;
     float: right;
     margin-right: 0;
   }
-  /* line 24, ../sass/_grid.scss */
+  /* line 22, ../sass/_grid.scss */
   .main .content {
     width: 69.38776%;
     float: left;
     margin-right: 2.04082%;
   }
-  /* line 25, ../sass/_grid.scss */
+  /* line 23, ../sass/_grid.scss */
   .main .summary {
     width: 28.57143%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 29, ../sass/_grid.scss */
+/* line 27, ../sass/_grid.scss */
 .contentinfo {
   clear: both;
   margin: 0 -1em;
   padding: 0 1em;
 }
 @media (min-width: 55.3125em) {
-  /* line 29, ../sass/_grid.scss */
+  /* line 27, ../sass/_grid.scss */
   .contentinfo {
     margin: 0;
     padding-left: 16.94915%;
     padding-right: 25.42373%;
   }
+}
+
+/* line 37, ../sass/_grid.scss */
+.float-right {
+  float: right;
+}
+
+/* Heading of the article */
+/* line 2, ../sass/_article.scss */
+header {
+  display: block;
+  margin-bottom: 1.2em;
 }

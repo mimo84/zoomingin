@@ -4,12 +4,10 @@ $total-columns  : 7;
 $column-width   : 4em;
 $gutter-width   : 1em;
 $grid-padding   : $gutter-width;
-
 $break          : 12;
 
 // Container
-
-.page {
+.container {
   @include container($total-columns, $break);
 }
 
@@ -34,4 +32,8 @@ $break          : 12;
     margin: 0;
     @include pad(2,3,$break);
   }
+}
+
+.float-right {
+	float: right;
 }

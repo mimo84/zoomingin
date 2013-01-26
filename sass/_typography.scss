@@ -4,17 +4,14 @@
 */
 
 // Headings
-
 html {
   font-size: 100%;
   line-height: 1.5em;
 }
-
 h1,h2,h3,h4,h5,h6 {
 	font-family: $heading-font-family;
 	font-weight: 700;
 }
-
 h1 {
   @include adjust-font-size-to(42px);
 }
@@ -48,6 +45,9 @@ p {
 	font-family: $body-font-family;
 	font-weight: 500;
 	@include adjust-font-size-to(14px);
+}
+a {
+	font-family: $body-font-family;
 }
 strong {
 	font-weight: 700;
