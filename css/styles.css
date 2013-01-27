@@ -71,23 +71,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* line 5, ../sass/_personalMixin.scss */
 * ::-webkit-selection {
-  color: #f14e23;
-  background: white;
+  color: #383838;
+  background: #f14e23;
 }
 /* line 5, ../sass/_personalMixin.scss */
 * ::-moz-selection {
-  color: #f14e23;
-  background: white;
+  color: #383838;
+  background: #f14e23;
 }
 /* line 5, ../sass/_personalMixin.scss */
 * ::-o-selection {
-  color: #f14e23;
-  background: white;
+  color: #383838;
+  background: #f14e23;
 }
 /* line 5, ../sass/_personalMixin.scss */
 * ::selection {
-  color: #f14e23;
-  background: white;
+  color: #383838;
+  background: #f14e23;
 }
 
 /* line 4, ../sass/_base.scss */
@@ -178,22 +178,23 @@ h1.title {
   color: #f14e23;
   padding-top: 0.24em;
   padding-bottom: 0.24em;
-  text-shadow: #e5e7ea 1px 2px 1px;
+  text-shadow: rgba(133, 133, 133, 0.75) 1px 2px 1px;
 }
 /* line 43, ../sass/_typography.scss */
 h1.title a {
   border: none;
-  color: #f14e23;
+  color: #383838;
+  background: #f14e23;
 }
 
-/* line 48, ../sass/_typography.scss */
+/* line 49, ../sass/_typography.scss */
 code {
   font-family: "PT Mono", sans-serif;
   background-color: #f14e23;
   color: white;
 }
 
-/* line 53, ../sass/_typography.scss */
+/* line 54, ../sass/_typography.scss */
 p {
   font-family: "Libre Baskerville", serif;
   font-weight: 500;
@@ -202,7 +203,7 @@ p {
   color: #383838;
 }
 
-/* line 59, ../sass/_typography.scss */
+/* line 60, ../sass/_typography.scss */
 a {
   font-family: "Libre Baskerville", serif;
   text-decoration: none;
@@ -222,18 +223,18 @@ a:active {
   color: #478f3a;
 }
 
-/* line 65, ../sass/_typography.scss */
+/* line 66, ../sass/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 68, ../sass/_typography.scss */
+/* line 69, ../sass/_typography.scss */
 em {
   font-style: italic;
 }
 
 /* Variations on the color */
-/* line 73, ../sass/_typography.scss */
+/* line 74, ../sass/_typography.scss */
 .text-complementar {
   color: #478f3a;
 }
