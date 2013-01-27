@@ -1,359 +1,77 @@
-/* Components and libraries*/
-/* line 17, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+/*
+Syntax error: File to import not found or unreadable: sassy-buttons.
+              Load paths:
+                c:/xampp/htdocs/zoomingin/wp-content/themes/zoomingin/sass
+                C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets
+                C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-1.0.5/sass
+                Compass::SpriteImporter
+        on line 5 of c:/xampp/htdocs/zoomingin/wp-content/themes/zoomingin/sass/styles.scss
 
-/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
+1: c:/xampp/htdocs/zoomingin/wp-content/themes/zoomingin/sass/styles.scss
 
-/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-/* Personal settings */
-/**
-* In this file we put all the base variables,
-* such as colors, font stacks, etc.
+Backtrace:
+c:/xampp/htdocs/zoomingin/wp-content/themes/zoomingin/sass/styles.scss:5
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:215:in `visit_import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+C:/Ruby193/bin/compass:23:in `load'
+C:/Ruby193/bin/compass:23:in `<main>'
 */
-/* line 5, ../sass/_personalMixin.scss */
-* ::-webkit-selection {
-  color: #383838;
-  background: #f14e23;
-}
-/* line 5, ../sass/_personalMixin.scss */
-* ::-moz-selection {
-  color: #383838;
-  background: #f14e23;
-}
-/* line 5, ../sass/_personalMixin.scss */
-* ::-o-selection {
-  color: #383838;
-  background: #f14e23;
-}
-/* line 5, ../sass/_personalMixin.scss */
-* ::selection {
-  color: #383838;
-  background: #f14e23;
-}
-
-/* line 4, ../sass/_base.scss */
-hr {
-  border: 0;
-  height: 1px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(229, 231, 234, 0.4)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(229, 231, 234, 0.4), rgba(0, 0, 0, 0));
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(229, 231, 234, 0.4), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(229, 231, 234, 0.4), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0), rgba(229, 231, 234, 0.4), rgba(0, 0, 0, 0));
-}
-
-/* line 9, ../sass/_base.scss */
-.clearfix {
-  *zoom: 1;
-}
-/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-/**
-* In this file we put all the typography
-* settings.
-*/
-/* line 7, ../sass/_typography.scss */
-html {
-  font-size: 100%;
-  line-height: 1.68em;
-}
-
-/* line 11, ../sass/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-}
-
-/* line 15, ../sass/_typography.scss */
-h1 {
-  font-size: 2.8em;
-  line-height: 1.14286em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-/* line 20, ../sass/_typography.scss */
-h2 {
-  font-size: 2.6em;
-  line-height: 1.23077em;
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-
-/* line 25, ../sass/_typography.scss */
-h3 {
-  font-size: 2.26667em;
-  line-height: 1.41176em;
-}
-
-/* line 28, ../sass/_typography.scss */
-h4 {
-  font-size: 1.93333em;
-  line-height: 1.65517em;
-}
-
-/* line 31, ../sass/_typography.scss */
-h5 {
-  font-size: 1.6em;
-  line-height: 2em;
-}
-
-/* line 34, ../sass/_typography.scss */
-h6 {
-  font-size: 1.2em;
-  line-height: 1.33333em;
-}
-
-/* line 37, ../sass/_typography.scss */
-h1.title {
-  font-size: 3.06667em;
-  line-height: 1.56522em;
-  color: #f14e23;
-  padding-top: 0.24em;
-  padding-bottom: 0.24em;
-  text-shadow: rgba(133, 133, 133, 0.75) 1px 2px 1px;
-}
-/* line 43, ../sass/_typography.scss */
-h1.title a {
-  border: none;
-  color: #383838;
-  background: #f14e23;
-}
-
-/* line 49, ../sass/_typography.scss */
-code {
-  font-family: "PT Mono", sans-serif;
-  background-color: #f14e23;
-  color: white;
-}
-
-/* line 54, ../sass/_typography.scss */
-p {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 500;
-  font-size: 0.93333em;
-  line-height: 1.71429em;
-  color: #383838;
-}
-
-/* line 60, ../sass/_typography.scss */
-a {
-  font-family: "Libre Baskerville", serif;
-  text-decoration: none;
-  border-bottom: 1px dotted #f14e23;
-  color: inherit;
-}
-/* line 18, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a:visited {
-  color: #f14e23;
-}
-/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a:hover {
-  color: #f14e23;
-}
-/* line 27, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a:active {
-  color: #478f3a;
-}
-
-/* line 66, ../sass/_typography.scss */
-strong {
-  font-weight: 700;
-}
-
-/* line 69, ../sass/_typography.scss */
-em {
-  font-style: italic;
-}
-
-/* Variations on the color */
-/* line 74, ../sass/_typography.scss */
-.text-complementar {
-  color: #478f3a;
-}
-
-/* line 10, ../sass/_grid.scss */
-.container {
-  *zoom: 1;
-  max-width: 34em;
-  _width: 34em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media (min-width: 55.3125em) {
-  /* line 10, ../sass/_grid.scss */
-  .container {
-    max-width: 59em;
-  }
-}
-
-@media (min-width: 55.3125em) {
-  /* line 17, ../sass/_grid.scss */
-  .banner {
-    padding-left: 16.94915%;
-  }
-
-  /* line 18, ../sass/_grid.scss */
-  .pagenav {
-    width: 15.25424%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-
-  /* line 19, ../sass/_grid.scss */
-  .main {
-    width: 83.05085%;
-    float: right;
-    margin-right: 0;
-  }
-  /* line 22, ../sass/_grid.scss */
-  .main .content {
-    width: 69.38776%;
-    float: left;
-    margin-right: 2.04082%;
-  }
-  /* line 23, ../sass/_grid.scss */
-  .main .summary {
-    width: 28.57143%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 27, ../sass/_grid.scss */
-.contentinfo {
-  clear: both;
-  margin: 0 -1em;
-  padding: 0 1em;
-}
-@media (min-width: 55.3125em) {
-  /* line 27, ../sass/_grid.scss */
-  .contentinfo {
-    margin: 0;
-    padding-left: 16.94915%;
-    padding-right: 25.42373%;
-  }
-}
-
-/* line 37, ../sass/_grid.scss */
-.float-left {
-  float: left;
-}
-
-/* line 40, ../sass/_grid.scss */
-.float-right {
-  float: right;
-}
-
-/* Heading of the article */
-/* line 2, ../sass/_article.scss */
-header {
-  display: block;
-  margin-bottom: 1.32em;
-}
-
-/* line 15, ../sass/_article.scss */
-article.home {
-  padding-bottom: 1.8em;
-}
-
-/* line 1, ../sass/_footer.scss */
-footer {
-  background: #6d3838;
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-}
-
-/* line 7, ../sass/_footer.scss */
-.footer-content {
-  padding-top: 2.4em;
-  padding-bottom: 2.4em;
-  margin-top: 2.4em;
-  color: inherit;
-}
-/* line 18, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.footer-content:visited {
-  color: #478f3a;
-}
-/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.footer-content:hover {
-  color: #f14e23;
-}
-/* line 27, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.footer-content:active {
-  color: #f14e23;
-}
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: sassy-buttons.\A               Load paths:\A                 c:/xampp/htdocs/zoomingin/wp-content/themes/zoomingin/sass\A                 C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-1.0.5/sass\A                 Compass::SpriteImporter\A         on line 5 of c:/xampp/htdocs/zoomingin/wp-content/themes/zoomingin/sass/styles.scss\A \A 1: c:/xampp/htdocs/zoomingin/wp-content/themes/zoomingin/sass/styles.scss"; }

@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width">
 				
-    <title> <?php wp_title('&dash;',true,'right'); ?>	<?php bloginfo('name'); ?></title>
+    <title> <?php wp_title('|',true,'right'); ?>	<?php bloginfo('name'); ?></title>
 
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>

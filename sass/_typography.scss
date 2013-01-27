@@ -13,37 +13,42 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 700;
 }
 h1 {
-  @include adjust-font-size-to(42px);
+  @include adjust-font-size-to(38px);
 	padding-top: 10px;
 	padding-bottom: 10px;
+	border-bottom: 1px solid $dark-grey;
 }
 h2 {
-  @include adjust-font-size-to(39px);
+  @include adjust-font-size-to(30px);
 	padding-top: 7px;
 	padding-bottom: 7px;
 }
 h3 {
-  @include adjust-font-size-to(34px);
+  @include adjust-font-size-to(27px);
 }
 h4 {
-  @include adjust-font-size-to(29px);
-}
-h5 {
   @include adjust-font-size-to(24px);
 }
+h5 {
+  @include adjust-font-size-to(20px);
+}
 h6 {
-  @include adjust-font-size-to(18px);
+  @include adjust-font-size-to(17px);
 }
 h1.title {
-	@include adjust-font-size-to(46px);
+	@include adjust-font-size-to(39px);
 	color: $main-color;
 	padding-top: $row-height*0.2;
 	padding-bottom: $row-height*0.2;
+	border-bottom: none;
 	@include text-shadow(rgba($dark-grey,0.75) 1px 2px 1px);
 	a {
 		border: none;
 		color: $text-color;
-		background: $main-color;
+		&:active {
+			background: $main-color;
+		}
+		
 	}
 }
 code {
