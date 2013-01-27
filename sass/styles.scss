@@ -1,11 +1,16 @@
+/* Components and libraries*/
 @import "compass";
 @import "compass/reset";
 @import "susy";
 
+/* Personal settings */
 @import "personalMixin";
 @import "variables";
+
 @import "base";
 @import "typography";
 @import "grid";
 @import "home";
 @import "article";
+@import "header";
+@import "footer";
