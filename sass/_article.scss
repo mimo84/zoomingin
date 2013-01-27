@@ -1,7 +1,7 @@
 /* Heading of the article */
 header {
 	display: block;
-	margin-bottom: 5em;
+	margin-bottom: $row-height*1.1;
 }
 .social {
 	
@@ -10,4 +10,8 @@ header {
 
 article.photo {
 
+}
+
+article.home {
+	padding-bottom: $row-height*1.5;
 }

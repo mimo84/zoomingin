@@ -17,7 +17,6 @@ h1 {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
 h2 {
   @include adjust-font-size-to(39px);
 	padding-top: 7px;
@@ -35,17 +34,15 @@ h5 {
 h6 {
   @include adjust-font-size-to(18px);
 }
-
 h1.title {
 	@include adjust-font-size-to(46px);
-	border-bottom: 1px solid;
-	boder-color: @include background-image(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0))
 	color: $main-color;
-	padding-top: $row-height*1.1;
-	padding-bottom: $row-height*1.1;
+	padding-top: $row-height*0.2;
+	padding-bottom: $row-height*0.2;
 	@include text-shadow($grey 1px 2px 1px);
 	a {
 		border: none;
+		color: $main-color;
 	}
 }
 code {
@@ -63,7 +60,7 @@ a {
 	font-family: $body-font-family;
 	text-decoration: none;
 	border-bottom: 1px dotted $main-color;
-	@include link-colors(inherit, $main-color, $main-color, $main-color-complementar);
+	@include link-colors(inherit, $main-color, $main-color-complementar, $main-color);
 }
 strong {
 	font-weight: 700;
