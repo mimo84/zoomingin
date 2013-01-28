@@ -1,0 +1,70 @@
+h2.comments-title {
+	@include adjust-font-size-to(27px);
+}
+ol.commentlist {
+	margin: 0 0 25px;
+	list-style: none;
+}
+li.comment .avatar {
+  float: left;
+  margin: 0 25px 10px 0;
+}
+a .avatar {
+  border-color: $light-grey;
+}
+.avatar {
+  background: none repeat scroll 0 0 $light-grey;
+  border: 1px solid $light-grey;
+  border-radius: 50px 50px 50px 50px;
+  height: 80px;
+  padding: 9px;
+  width: 80px;
+}
+.comment-meta {
+  margin: 0 0 25px;
+  padding: 12px 0 0;
+}
+.comment-author {
+  display: block;
+}
+
+li.comment, li.ping {
+    clear: both;
+}
+li.ping {
+    background: none repeat scroll 0 0 $light-grey;
+    border: 1px solid $light-grey;
+    margin: 0 0 25px;
+    padding: 25px 25px 0;
+		.avatar {
+			float: right;
+			margin: 0 0 25px 25px;
+		}
+}
+li.ping 
+.comment-author cite {
+    color: $neutral-color;
+    @include adjust-font-size-to(13px);
+    font-style: normal;
+}
+section.comment-content {
+  float: left;
+  width: 85%;
+	border: 1px solid $light-grey;
+	p {
+    clear: left;
+    @include adjust-font-size-to(12px);
+    padding-left: 25px;
+    word-wrap: break-word;
+	}
+}
+ol.comment-list {
+    list-style: none outside none;
+    margin: 0 0 25px;
+}
+ol.comment-list ol.children {
+    border-left: 1px solid $light-grey;
+    list-style: none outside none;
+    margin: -25px 0 0 25px;
+    padding: 25px 0 0 25px;
+}

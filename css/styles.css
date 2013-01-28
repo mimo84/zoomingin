@@ -73,22 +73,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 5, ../sass/_personalMixin.scss */
 * ::-webkit-selection {
   color: #383838;
-  background: #f14e23;
+  background: #1f83b5;
 }
 /* line 5, ../sass/_personalMixin.scss */
 * ::-moz-selection {
   color: #383838;
-  background: #f14e23;
+  background: #1f83b5;
 }
 /* line 5, ../sass/_personalMixin.scss */
 * ::-o-selection {
   color: #383838;
-  background: #f14e23;
+  background: #1f83b5;
 }
 /* line 5, ../sass/_personalMixin.scss */
 * ::selection {
   color: #383838;
-  background: #f14e23;
+  background: #1f83b5;
 }
 
 /* line 4, ../sass/_base.scss */
@@ -178,7 +178,7 @@ h6 {
 h1.title {
   font-size: 2.6em;
   line-height: 1.23077em;
-  color: #f14e23;
+  color: #1f83b5;
   padding-top: 0.24em;
   padding-bottom: 0.24em;
   border-bottom: none;
@@ -191,13 +191,13 @@ h1.title a {
 }
 /* line 48, ../sass/_typography.scss */
 h1.title a:active {
-  background: #f14e23;
+  background: #1f83b5;
 }
 
 /* line 54, ../sass/_typography.scss */
 code {
   font-family: "PT Mono", sans-serif;
-  background-color: #f14e23;
+  background-color: #1f83b5;
   color: white;
 }
 
@@ -208,9 +208,10 @@ p {
   font-size: 0.86667em;
   line-height: 1.84615em;
   color: #383838;
+  margin-bottom: 1.2em;
 }
 
-/* line 65, ../sass/_typography.scss */
+/* line 66, ../sass/_typography.scss */
 a {
   font-family: "Libre Baskerville", serif;
   text-decoration: none;
@@ -218,31 +219,100 @@ a {
 }
 /* line 18, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:visited {
-  color: #f14e23;
+  color: #1f83b5;
 }
 /* line 24, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
-  color: #f14e23;
+  color: #1f83b5;
 }
 /* line 27, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:active {
   color: #478f3a;
 }
 
-/* line 70, ../sass/_typography.scss */
+/* line 71, ../sass/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 73, ../sass/_typography.scss */
+/* line 74, ../sass/_typography.scss */
 em {
   font-style: italic;
 }
 
 /* Variations on the color */
-/* line 78, ../sass/_typography.scss */
+/* line 79, ../sass/_typography.scss */
 .text-complementar {
   color: #478f3a;
+}
+
+/* line 83, ../sass/_typography.scss */
+ol, ul {
+  padding: 0;
+  margin-bottom: 3.6em;
+}
+/* line 86, ../sass/_typography.scss */
+ol li, ul li {
+  font-size: 1.12667em;
+  line-height: 1.42012em;
+  margin-bottom: 1.2em;
+  color: #383838;
+}
+/* line 91, ../sass/_typography.scss */
+ol ol, ol ul, ul ol, ul ul {
+  margin: 0 0 0 1.2em;
+}
+
+/* line 95, ../sass/_typography.scss */
+ol {
+  list-style: decimal inside none;
+}
+
+/* line 98, ../sass/_typography.scss */
+ul {
+  list-style: bullet inside none;
+}
+
+/* Blockquotes 
+ * Inspired to:
+ * http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/
+ */
+/* line 105, ../sass/_typography.scss */
+blockquote {
+  margin: 0 0 1.2em 0;
+  padding: 0;
+  position: relative;
+  padding-top: 15px;
+  padding-left: 50px;
+}
+/* line 112, ../sass/_typography.scss */
+blockquote:after {
+  font-family: 'icons';
+  background: rgba(31, 131, 181, 0.8);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  content: '\275e';
+  position: absolute;
+  font-size: 70px;
+  line-height: 112px;
+  text-align: center;
+  top: 0px;
+  left: 3%;
+  margin-left: -65px;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+/* line 129, ../sass/_typography.scss */
+blockquote p {
+  font-size: 1.21333em;
+  line-height: 1.31868em;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.5);
+  display: inline;
+  color: rgba(31, 131, 181, 0.8);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+  line-height: 40px;
 }
 
 /* line 10, ../sass/_grid.scss */
@@ -353,13 +423,13 @@ em {
 /* line 22, ../sass/_pagination.scss */
 .page-numbers > li > a:hover,
 .page-numbers span.current {
-  border: 1px solid #f14e23;
+  border: 1px solid #1f83b5;
 }
 
 /* line 26, ../sass/_pagination.scss */
 .page-numbers .current > a,
 .page-numbers span.current {
-  color: #f14e23;
+  color: #1f83b5;
   cursor: default;
 }
 
@@ -390,7 +460,7 @@ header {
 
 /* line 11, ../sass/_article.scss */
 article a {
-  border-bottom: 1px dotted #f14e23;
+  border-bottom: 1px dotted #1f83b5;
 }
 /* line 17, ../sass/_article.scss */
 article.home {
@@ -417,9 +487,109 @@ footer {
 }
 /* line 24, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .footer-content:hover {
-  color: #f14e23;
+  color: #1f83b5;
 }
 /* line 27, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .footer-content:active {
-  color: #f14e23;
+  color: #1f83b5;
+}
+
+/* line 1, ../sass/_comments.scss */
+h2.comments-title {
+  font-size: 1.8em;
+  line-height: 1.77778em;
+}
+
+/* line 4, ../sass/_comments.scss */
+ol.commentlist {
+  margin: 0 0 25px;
+  list-style: none;
+}
+
+/* line 8, ../sass/_comments.scss */
+li.comment .avatar {
+  float: left;
+  margin: 0 25px 10px 0;
+}
+
+/* line 12, ../sass/_comments.scss */
+a .avatar {
+  border-color: rgba(229, 231, 234, 0.4);
+}
+
+/* line 15, ../sass/_comments.scss */
+.avatar {
+  background: none repeat scroll 0 0 rgba(229, 231, 234, 0.4);
+  border: 1px solid rgba(229, 231, 234, 0.4);
+  border-radius: 50px 50px 50px 50px;
+  height: 80px;
+  padding: 9px;
+  width: 80px;
+}
+
+/* line 23, ../sass/_comments.scss */
+.comment-meta {
+  margin: 0 0 25px;
+  padding: 12px 0 0;
+}
+
+/* line 27, ../sass/_comments.scss */
+.comment-author {
+  display: block;
+}
+
+/* line 31, ../sass/_comments.scss */
+li.comment, li.ping {
+  clear: both;
+}
+
+/* line 34, ../sass/_comments.scss */
+li.ping {
+  background: none repeat scroll 0 0 rgba(229, 231, 234, 0.4);
+  border: 1px solid rgba(229, 231, 234, 0.4);
+  margin: 0 0 25px;
+  padding: 25px 25px 0;
+}
+/* line 39, ../sass/_comments.scss */
+li.ping .avatar {
+  float: right;
+  margin: 0 0 25px 25px;
+}
+
+/* line 45, ../sass/_comments.scss */
+li.ping
+.comment-author cite {
+  color: #6d3838;
+  font-size: 0.86667em;
+  line-height: 1.84615em;
+  font-style: normal;
+}
+
+/* line 50, ../sass/_comments.scss */
+section.comment-content {
+  float: left;
+  width: 85%;
+  border: 1px solid rgba(229, 231, 234, 0.4);
+}
+/* line 54, ../sass/_comments.scss */
+section.comment-content p {
+  clear: left;
+  font-size: 0.8em;
+  line-height: 2em;
+  padding-left: 25px;
+  word-wrap: break-word;
+}
+
+/* line 61, ../sass/_comments.scss */
+ol.comment-list {
+  list-style: none outside none;
+  margin: 0 0 25px;
+}
+
+/* line 65, ../sass/_comments.scss */
+ol.comment-list ol.children {
+  border-left: 1px solid rgba(229, 231, 234, 0.4);
+  list-style: none outside none;
+  margin: -25px 0 0 25px;
+  padding: 25px 0 0 25px;
 }

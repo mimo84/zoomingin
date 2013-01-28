@@ -47,7 +47,7 @@ function zoomignin_comment( $comment, $args, $depth ) {
 		<article id="comment-<?php comment_ID(); ?>" class="comment">
 			<header class="comment-meta comment-author vcard">
 				<?php
-					echo get_avatar( $comment, 44 );
+				echo get_avatar( $comment, 120 );
 					printf( '<cite class="fn">%1$s %2$s</cite>',
 						get_comment_author_link(),
 						// If current post author is also comment author, make it known visually.
