@@ -19,14 +19,13 @@
 		<!--[if lt IE 9]>
 			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 		<![endif]-->
-     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 			<?php wp_head(); ?>	
     </head>
     <body>
-        <!--[if lt IE 10]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
-        <![endif]-->
-		<header class="main">
-			<h2><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h2>
-			<h3><?php bloginfo('description'); ?></h3>
-		</header>
+			<!--[if lt IE 10]>
+				<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+			<![endif]-->
+			<header class="main">
+				<h2><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h2>
+				<h3><?php bloginfo('description'); ?></h3>
+			</header>
