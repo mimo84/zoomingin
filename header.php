@@ -23,7 +23,7 @@
     </head>
     <body>
 			<!--[if lt IE 10]>
-				<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+				<p class="chromeframe"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.','zoomingintheme');?></p>
 			<![endif]-->
 			<header class="main">
 				<h2><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h2>

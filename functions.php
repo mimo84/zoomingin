@@ -1,7 +1,15 @@
 <?php
+/**
+ * Add internazionalization and localization to the theme
+ * From SmashingMagazine tutorial:
+ * http://wp.smashingmagazine.com/2011/12/29/internationalizing-localizing-wordpress-theme/
+ */
+add_action('after_setup_theme', 'zoomingin_theme_setup');
+function zoomingin_theme_setup(){
+    load_theme_textdomain('zoomingintheme', get_template_directory() . '/languages');
+}
 
-add_filter('wp_list_categories', 'zoomingin_remove_category_list_rel');
-add_filter('the_category', 'zoomingin_remove_category_list_rel');
+
 
 
 if (!is_admin()) {  
@@ -9,7 +17,77 @@ if (!is_admin()) {
 	add_action('init', 'zoomingin_enqueue_scripts');
 }
 
-// Remove rel attribute from the category list - thanks Joseph (http://josephleedy.me/blog/make-wordpress-category-list-valid-by-removing-rel-attribute/)! 
+if ( ! function_exists( 'zoomignin_comment' ) ) :
+/**
+ * Template for comments and pingbacks.
+ *
+ * To override this walker in a child theme without modifying the comments template
+ * simply create your own zoomingintheme_comment(), and that function will be used instead.
+ *
+ * Used as a callback by wp_list_comments() for displaying the comments.
+ *
+ * @since Twenty Twelve 1.0
+ */
+function zoomignin_comment( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment;
+	switch ( $comment->comment_type ) :
+		case 'pingback' :
+		case 'trackback' :
+		// Display trackbacks differently than normal comments.
+	?>
+	<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+		<p><?php _e( 'Pingback:', 'zoomingintheme' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'zoomingintheme' ), '<span class="edit-link">', '</span>' ); ?></p>
+	<?php
+			break;
+		default :
+		// Proceed with normal comments.
+		global $post;
+	?>
+	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+		<article id="comment-<?php comment_ID(); ?>" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<?php
+					echo get_avatar( $comment, 44 );
+					printf( '<cite class="fn">%1$s %2$s</cite>',
+						get_comment_author_link(),
+						// If current post author is also comment author, make it known visually.
+						( $comment->user_id === $post->post_author ) ? '<span> ' . __( 'Post author', 'zoomingintheme' ) . '</span>' : ''
+					);
+					printf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
+						esc_url( get_comment_link( $comment->comment_ID ) ),
+						get_comment_time( 'c' ),
+						/* translators: 1: date, 2: time */
+						sprintf( __( '%1$s at %2$s', 'zoomingintheme' ), get_comment_date(), get_comment_time() )
+					);
+				?>
+			</header><!-- .comment-meta -->
+
+			<?php if ( '0' == $comment->comment_approved ) : ?>
+				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'zoomingintheme' ); ?></p>
+			<?php endif; ?>
+
+			<section class="comment-content comment">
+				<?php comment_text(); ?>
+				<?php edit_comment_link( __( 'Edit', 'zoomingintheme' ), '<p class="edit-link">', '</p>' ); ?>
+			</section><!-- .comment-content -->
+
+			<div class="reply">
+				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'zoomingintheme' ), 'after' => ' <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	<?php
+		break;
+	endswitch; // end comment_type check
+}
+endif;
+
+/**
+ * Remove rel attribute from the category list - thanks Joseph 
+ * From Joseph Leedy blog:
+ * http://josephleedy.me/blog/make-wordpress-category-list-valid-by-removing-rel-attribute/
+ */
+add_filter('wp_list_categories', 'zoomingin_remove_category_list_rel');
+add_filter('the_category', 'zoomingin_remove_category_list_rel');
 function zoomingin_remove_category_list_rel($output) {
   $output = str_replace(' rel="category tag"', '', $output);
   return $output;

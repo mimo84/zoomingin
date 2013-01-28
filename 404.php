@@ -4,7 +4,7 @@
 		<div class="main_content home">
 			<?php
 				$home_link = sprintf('<a href="%s" title="%s">%s</a>', home_url(), get_bloginfo('name'),'Home Page');
-				echo sprintf('Something wrong... go to the %s', $home_link);
+				echo sprintf(__('Something wrong... go to the %s','zoomingintheme'), $home_link);
 			?>
 			<script>
 				var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
