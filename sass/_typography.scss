@@ -10,7 +10,7 @@ html {
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: $heading-font-family;
-	font-weight: 700;
+	font-weight: $font-weight-bold;
 }
 h1 {
   @include adjust-font-size-to(38px);
@@ -58,18 +58,17 @@ code {
 }
 p {
 	font-family: $body-font-family;
-	font-weight: 500;
-	@include adjust-font-size-to(14px);
+	font-weight: $font-weight-normal;
+	@include adjust-font-size-to(13px);
 	color: $text-color;
 }
 a {
 	font-family: $body-font-family;
 	text-decoration: none;
-	border-bottom: 1px dotted $main-color;
 	@include link-colors(inherit, $main-color, $main-color-complementar, $main-color);
 }
 strong {
-	font-weight: 700;
+	font-weight: $font-weight-bold;
 }
 em {
 	font-style: italic;

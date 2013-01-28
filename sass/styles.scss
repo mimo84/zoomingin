@@ -8,9 +8,13 @@
 @import "personalMixin";
 @import "variables";
 
+/* Components */
 @import "base";
 @import "typography";
 @import "grid";
+@import "pagination";
+
+/* Styles */
 @import "home";
 @import "article";
 @import "header";

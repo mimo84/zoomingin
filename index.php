@@ -8,20 +8,21 @@
 			<?php endwhile; ?>
 			<?php endif; ?>
 		</div><!-- End Main Content -->
-		<?php
-			$next = get_next_posts_link();
-			$prev = get_previous_posts_link();
-		?>
-		<?php if($next || $prev): ?>	
-		<div class="pagination row">			
-			<?php if($next): ?>
-				<a href='<?php echo next_posts(false, 0 ); ?>' class='btn btn-main'> <?php _e('Older Entries', 'frank_theme') ?> </a>
-			<?php endif; ?>
-			<?php if($prev): ?>
-				<a href='<?php echo previous_posts(false, 0 ); ?>' class='btn btn-main'> <?php _e('Newer Entries', 'frank_theme') ?> </a>
-			<?php endif; ?>
+		<div class="pagination">
+			<?php
+				global $wp_query;
+
+				$big = 999999999; // need an unlikely integer
+
+				echo paginate_links( array(
+					'base' 		=> str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+					'format' 	=> '?paged=%#%',
+					'type'		=> 'list',
+					'current' => max( 1, get_query_var('paged') ),
+					'total' 	=> $wp_query->max_num_pages
+				) );
+			?>
 		</div>
-		<?php endif; ?>
 	</div><!-- End Container -->
 
 <?php get_footer(); ?>

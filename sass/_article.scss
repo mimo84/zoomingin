@@ -7,11 +7,15 @@ header {
 	
 }
 
+article {
+	a {
+		border-bottom: 1px dotted $main-color;
+	}
+	&.photo {
 
-article.photo {
-
-}
-
-article.home {
-	padding-bottom: $row-height*1.5;
+	}
+	&.home {
+		padding-bottom: $row-height*1.5;
+	}
+	
 }

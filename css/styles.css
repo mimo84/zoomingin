@@ -69,6 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 * In this file we put all the base variables,
 * such as colors, font stacks, etc.
 */
+/* Components */
 /* line 5, ../sass/_personalMixin.scss */
 * ::-webkit-selection {
   color: #383838;
@@ -203,9 +204,9 @@ code {
 /* line 59, ../sass/_typography.scss */
 p {
   font-family: "Libre Baskerville", serif;
-  font-weight: 500;
-  font-size: 0.93333em;
-  line-height: 1.71429em;
+  font-weight: 400;
+  font-size: 0.86667em;
+  line-height: 1.84615em;
   color: #383838;
 }
 
@@ -213,7 +214,6 @@ p {
 a {
   font-family: "Libre Baskerville", serif;
   text-decoration: none;
-  border-bottom: 1px dotted #f14e23;
   color: inherit;
 }
 /* line 18, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
@@ -229,18 +229,18 @@ a:active {
   color: #478f3a;
 }
 
-/* line 71, ../sass/_typography.scss */
+/* line 70, ../sass/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 74, ../sass/_typography.scss */
+/* line 73, ../sass/_typography.scss */
 em {
   font-style: italic;
 }
 
 /* Variations on the color */
-/* line 79, ../sass/_typography.scss */
+/* line 78, ../sass/_typography.scss */
 .text-complementar {
   color: #478f3a;
 }
@@ -325,6 +325,62 @@ em {
   float: right;
 }
 
+/* line 2, ../sass/_pagination.scss */
+.page-numbers {
+  display: inline-block;
+  margin: 1.2em 0;
+  border-radius: 3px;
+}
+
+/* line 7, ../sass/_pagination.scss */
+.page-numbers > li {
+  display: inline;
+}
+
+/* line 11, ../sass/_pagination.scss */
+.page-numbers > li > a,
+.page-numbers > li > span {
+  float: left;
+  padding: 4px 12px;
+  line-height: 1.2em;
+  text-decoration: none;
+  background-color: white;
+  border-left-width: 0;
+  color: #383838;
+  border: 1px solid transparent;
+}
+
+/* line 22, ../sass/_pagination.scss */
+.page-numbers > li > a:hover,
+.page-numbers span.current {
+  border: 1px solid #f14e23;
+}
+
+/* line 26, ../sass/_pagination.scss */
+.page-numbers .current > a,
+.page-numbers span.current {
+  color: #f14e23;
+  cursor: default;
+}
+
+/* line 31, ../sass/_pagination.scss */
+.page-numbers > li:first-child > a,
+.page-numbers > li:first-child > span {
+  border-left-width: 1px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+/* line 36, ../sass/_pagination.scss */
+.page-numbers > li:last-child > a,
+.page-numbers > li:last-child > span {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* Styles */
 /* Heading of the article */
 /* line 2, ../sass/_article.scss */
 header {
@@ -332,7 +388,11 @@ header {
   margin-bottom: 1.32em;
 }
 
-/* line 15, ../sass/_article.scss */
+/* line 11, ../sass/_article.scss */
+article a {
+  border-bottom: 1px dotted #f14e23;
+}
+/* line 17, ../sass/_article.scss */
 article.home {
   padding-bottom: 1.8em;
 }

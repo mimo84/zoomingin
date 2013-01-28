@@ -13,10 +13,18 @@ $dark-grey: rgba(133,133,133,1);
 $grey: rgba(229,231,234,1);
 $light-grey: rgba(229,231,234,0.4);
 
+// Borders
+$border-radius: 3px;
+$border-color:	$main-color;
+
+
+
 //Typography
 $base-font-size: 15px;
 $base-line-height: 24px;
 $row-height: 1.2em;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
 
 $heading-font-family: 'Libre Baskerville', serif;
 $body-font-family: 'Libre Baskerville', serif;
