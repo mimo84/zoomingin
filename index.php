@@ -7,22 +7,29 @@
 				<?php get_template_part('partials/post'); ?>
 			<?php endwhile; ?>
 			<?php endif; ?>
+			<div class="pagination">
+				<?php
+					global $wp_query;
+					$big = 999999999; // need an unlikely integer
+
+					echo paginate_links( array(
+						'base' 		=> str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+						'format' 	=> '?paged=%#%',
+						'type'		=> 'list',
+						'current' => max( 1, get_query_var('paged') ),
+						'total' 	=> $wp_query->max_num_pages
+					));
+				?>
+			</div>
 		</div><!-- End Main Content -->
-		<div class="pagination">
-			<?php
-				global $wp_query;
-
-				$big = 999999999; // need an unlikely integer
-
-				echo paginate_links( array(
-					'base' 		=> str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-					'format' 	=> '?paged=%#%',
-					'type'		=> 'list',
-					'current' => max( 1, get_query_var('paged') ),
-					'total' 	=> $wp_query->max_num_pages
-				) );
-			?>
+		<div class="right_sidebar">
+			<?php if ( is_active_sidebar( 'right-sidebar' ) ) : ?>
+	
+				<?php dynamic_sidebar( 'right-sidebar' ); ?>
+	
+			<?php endif; ?>
 		</div>
+
 	</div><!-- End Container -->
 
 <?php get_footer(); ?>

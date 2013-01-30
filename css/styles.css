@@ -315,13 +315,19 @@ blockquote p {
   line-height: 40px;
 }
 
-/* line 10, ../sass/_grid.scss */
+/* line 16, ../sass/_grid.scss */
+header.main {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 20, ../sass/_grid.scss */
 .container {
   *zoom: 1;
-  max-width: 34em;
-  _width: 34em;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 24em;
+  _width: 24em;
+  padding-left: 0.33333em;
+  padding-right: 0.33333em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -331,66 +337,55 @@ blockquote p {
   display: table;
   clear: both;
 }
-@media (min-width: 55.3125em) {
-  /* line 10, ../sass/_grid.scss */
+@media (min-width: 36.5625em) {
+  /* line 20, ../sass/_grid.scss */
+  .container {
+    max-width: 39em;
+  }
+}
+@media (min-width: 51.5625em) {
+  /* line 20, ../sass/_grid.scss */
   .container {
     max-width: 59em;
   }
 }
 
-@media (min-width: 55.3125em) {
-  /* line 17, ../sass/_grid.scss */
-  .banner {
-    padding-left: 16.94915%;
+@media (min-width: 36.5625em) {
+  /* line 28, ../sass/_grid.scss */
+  .main_content {
+    width: 74.35897%;
+    float: left;
+    margin-right: 2.5641%;
   }
 
-  /* line 18, ../sass/_grid.scss */
-  .pagenav {
-    width: 15.25424%;
+  /* line 31, ../sass/_grid.scss */
+  .right_sidebar {
+    width: 23.07692%;
+    float: left;
+    margin-right: 2.5641%;
+  }
+}
+@media (min-width: 51.5625em) {
+  /* line 40, ../sass/_grid.scss */
+  .main_content {
+    width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 19, ../sass/_grid.scss */
-  .main {
-    width: 83.05085%;
-    float: right;
-    margin-right: 0;
-  }
-  /* line 22, ../sass/_grid.scss */
-  .main .content {
-    width: 69.38776%;
-    float: left;
-    margin-right: 2.04082%;
-  }
-  /* line 23, ../sass/_grid.scss */
-  .main .summary {
-    width: 28.57143%;
+  /* line 43, ../sass/_grid.scss */
+  .right_sidebar {
+    width: 32.20339%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 27, ../sass/_grid.scss */
-.contentinfo {
-  clear: both;
-  margin: 0 -1em;
-  padding: 0 1em;
-}
-@media (min-width: 55.3125em) {
-  /* line 27, ../sass/_grid.scss */
-  .contentinfo {
-    margin: 0;
-    padding-left: 16.94915%;
-    padding-right: 25.42373%;
-  }
-}
-
-/* line 37, ../sass/_grid.scss */
+/* line 51, ../sass/_grid.scss */
 .float-left {
   float: left;
 }
 
-/* line 40, ../sass/_grid.scss */
+/* line 54, ../sass/_grid.scss */
 .float-right {
   float: right;
 }

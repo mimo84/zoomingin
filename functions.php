@@ -9,7 +9,23 @@ function zoomingin_theme_setup(){
     load_theme_textdomain('zoomingintheme', get_template_directory() . '/languages');
 }
 
+/**
+ * Add sidebars and widgets 
+ * We handle them from just one place
+ */
+add_action('widgets_init', 'zoomingin_sidebars');
+function zoomingin_sidebars() {
+	register_sidebar(array(
+		'name' => __('Right Sidebar','zoomingintheme'),
+		'id' => 'right-sidebar',
+		'before_widget' => '<div id="%1$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="side-title">',
+		'after_title' => '</h4>',
+	));
 
+
+}
 
 
 if (!is_admin()) {  
