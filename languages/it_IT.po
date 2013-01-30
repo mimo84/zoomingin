@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ZoomingIn Theme\n"
-"POT-Creation-Date: 2013-01-28 15:49+1000\n"
-"PO-Revision-Date: 2013-01-28 15:53+1000\n"
+"POT-Creation-Date: 2013-01-30 20:22+1000\n"
+"PO-Revision-Date: 2013-01-30 20:23+1000\n"
 "Last-Translator: Maurizio\n"
 "Language-Team: Maurizio Napoleoni <napy84@gmail.com>\n"
 "Language: English\n"
@@ -36,32 +36,36 @@ msgstr "Nuovi commenti &rarr;"
 msgid "Comments are closed."
 msgstr "Commenti chiusi"
 
-#: ../functions.php:39
+#: ../functions.php:19
+msgid "Right Sidebar"
+msgstr "Colonna destra"
+
+#: ../functions.php:55
 msgid "Pingback:"
 msgstr "Pingback:"
 
-#: ../functions.php:39
+#: ../functions.php:55
 msgid "(Edit)"
 msgstr "(Modifica)"
 
-#: ../functions.php:54
+#: ../functions.php:70
 msgid "Post author"
 msgstr "Autore del post"
 
-#: ../functions.php:60
+#: ../functions.php:76
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s alle %2$s"
 
-#: ../functions.php:66
+#: ../functions.php:82
 msgid "Your comment is awaiting moderation."
 msgstr "Il tuo commento apparirà tra poco. Ora è in coda per la moderazione."
 
-#: ../functions.php:71
+#: ../functions.php:87
 msgid "Edit"
 msgstr "Modifica"
 
-#: ../functions.php:75
+#: ../functions.php:91
 msgid "Reply"
 msgstr "Rispondi"
 
@@ -74,15 +78,15 @@ msgstr ""
 "strong>. Per favore <a href=\"http://browsehappy.com/\">aggiorna il tuo "
 "browser</a>."
 
-#: ../partials/post.php:6
+#: ../page.php:12 ../partials/post.php:6
 msgid "No Comments"
 msgstr "Nessun commento"
 
-#: ../partials/post.php:7
+#: ../page.php:13 ../partials/post.php:7
 msgid "One Comment"
 msgstr "Un commento"
 
-#: ../partials/post.php:8
+#: ../page.php:14 ../partials/post.php:8
 msgid "% Comments"
 msgstr "% Commenti"
 

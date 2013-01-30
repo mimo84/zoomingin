@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ZoomingIn Theme\n"
-"POT-Creation-Date: 2013-01-28 15:49+1000\n"
-"PO-Revision-Date: 2013-01-28 15:49+1000\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2013-01-30 20:23+1000\n"
+"PO-Revision-Date: 2013-01-30 20:23+1000\n"
+"Last-Translator: Maurizio\n"
 "Language-Team: Maurizio Napoleoni <napy84@gmail.com>\n"
 "Language: English\n"
 "MIME-Version: 1.0\n"
@@ -36,32 +36,36 @@ msgstr "Newer Comments &rarr;"
 msgid "Comments are closed."
 msgstr "Comments are closed."
 
-#: ../functions.php:39
+#: ../functions.php:19
+msgid "Right Sidebar"
+msgstr "Right Sidebar"
+
+#: ../functions.php:55
 msgid "Pingback:"
 msgstr "Pingback:"
 
-#: ../functions.php:39
+#: ../functions.php:55
 msgid "(Edit)"
 msgstr "(Edit)"
 
-#: ../functions.php:54
+#: ../functions.php:70
 msgid "Post author"
 msgstr "Post author"
 
-#: ../functions.php:60
+#: ../functions.php:76
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s at %2$s"
 
-#: ../functions.php:66
+#: ../functions.php:82
 msgid "Your comment is awaiting moderation."
 msgstr "Your comment is awaiting moderation."
 
-#: ../functions.php:71
+#: ../functions.php:87
 msgid "Edit"
 msgstr "Edit"
 
-#: ../functions.php:75
+#: ../functions.php:91
 msgid "Reply"
 msgstr "Reply"
 
@@ -73,15 +77,15 @@ msgstr ""
 "You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
 "browsehappy.com/\">upgrade your browser</a>."
 
-#: ../partials/post.php:6
+#: ../page.php:12 ../partials/post.php:6
 msgid "No Comments"
 msgstr "No Comments"
 
-#: ../partials/post.php:7
+#: ../page.php:13 ../partials/post.php:7
 msgid "One Comment"
 msgstr "One Comment"
 
-#: ../partials/post.php:8
+#: ../page.php:14 ../partials/post.php:8
 msgid "% Comments"
 msgstr "% Comments"
 
