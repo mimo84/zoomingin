@@ -28,4 +28,8 @@
 			<header class="main">
 				<h2><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h2>
 				<h3><?php bloginfo('description'); ?></h3>
+				<?php $header_image = get_header_image(); 
+							if( ! empty($header_image) ) :  ?>
+								<img src="<?php echo esc_url( $header_image); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+				<?php endif; ?>
 			</header>
