@@ -33,7 +33,8 @@ header.main {
 	}
 }
 
-@include at-breakpoint($computer){
+@include at-breakpoint($computer){+6
+
   .container{
 			
   }
