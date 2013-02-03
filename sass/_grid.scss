@@ -14,8 +14,7 @@ $computer: 55em 12;
 
 // Container
 header.main {
-	display: block;
-	margin: 0 auto;
+	@include container($total-columns, $tablet, $computer);
 }
 .container {
   @include container($total-columns, $tablet, $computer);

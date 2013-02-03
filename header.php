@@ -25,6 +25,7 @@
 			<!--[if lt IE 10]>
 				<p class="chromeframe"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.','zoomingintheme');?></p>
 			<![endif]-->
+			<a href="https://github.com/mimo84/zoomingin"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
 			<header class="main">
 				<h2><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h2>
 				<h3><?php bloginfo('description'); ?></h3>

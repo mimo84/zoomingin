@@ -317,11 +317,34 @@ blockquote p {
 
 /* line 16, ../sass/_grid.scss */
 header.main {
-  display: block;
-  margin: 0 auto;
+  *zoom: 1;
+  max-width: 24em;
+  _width: 24em;
+  padding-left: 0.33333em;
+  padding-right: 0.33333em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+header.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 36.5625em) {
+  /* line 16, ../sass/_grid.scss */
+  header.main {
+    max-width: 39em;
+  }
+}
+@media (min-width: 51.5625em) {
+  /* line 16, ../sass/_grid.scss */
+  header.main {
+    max-width: 59em;
+  }
 }
 
-/* line 20, ../sass/_grid.scss */
+/* line 19, ../sass/_grid.scss */
 .container {
   *zoom: 1;
   max-width: 24em;
@@ -338,27 +361,27 @@ header.main {
   clear: both;
 }
 @media (min-width: 36.5625em) {
-  /* line 20, ../sass/_grid.scss */
+  /* line 19, ../sass/_grid.scss */
   .container {
     max-width: 39em;
   }
 }
 @media (min-width: 51.5625em) {
-  /* line 20, ../sass/_grid.scss */
+  /* line 19, ../sass/_grid.scss */
   .container {
     max-width: 59em;
   }
 }
 
 @media (min-width: 36.5625em) {
-  /* line 28, ../sass/_grid.scss */
+  /* line 27, ../sass/_grid.scss */
   .main_content {
     width: 74.35897%;
     float: left;
     margin-right: 2.5641%;
   }
 
-  /* line 31, ../sass/_grid.scss */
+  /* line 30, ../sass/_grid.scss */
   .right_sidebar {
     width: 23.07692%;
     float: left;
@@ -366,26 +389,26 @@ header.main {
   }
 }
 @media (min-width: 51.5625em) {
-  /* line 41, ../sass/_grid.scss */
+  /* line 40, ../sass/_grid.scss */
   .main_content {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 44, ../sass/_grid.scss */
+  /* line 43, ../sass/_grid.scss */
   .right_sidebar {
     width: 32.20339%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 52, ../sass/_grid.scss */
+/* line 51, ../sass/_grid.scss */
 .float-left {
   float: left;
 }
 
-/* line 55, ../sass/_grid.scss */
+/* line 54, ../sass/_grid.scss */
 .float-right {
   float: right;
 }
