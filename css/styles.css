@@ -135,8 +135,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 15, ../sass/_typography.scss */
 h1 {
-  font-size: 2.53333em;
-  line-height: 1.26316em;
+  font-size: 2em;
+  line-height: 1.6em;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #858585;
@@ -144,40 +144,40 @@ h1 {
 
 /* line 21, ../sass/_typography.scss */
 h2 {
-  font-size: 2em;
-  line-height: 1.6em;
+  font-size: 1.8em;
+  line-height: 1.77778em;
   padding-top: 7px;
   padding-bottom: 7px;
 }
 
 /* line 26, ../sass/_typography.scss */
 h3 {
-  font-size: 1.8em;
-  line-height: 1.77778em;
-}
-
-/* line 29, ../sass/_typography.scss */
-h4 {
   font-size: 1.6em;
   line-height: 2em;
 }
 
-/* line 32, ../sass/_typography.scss */
-h5 {
+/* line 29, ../sass/_typography.scss */
+h4 {
   font-size: 1.33333em;
   line-height: 1.2em;
 }
 
+/* line 32, ../sass/_typography.scss */
+h5 {
+  font-size: 1.2em;
+  line-height: 1.33333em;
+}
+
 /* line 35, ../sass/_typography.scss */
 h6 {
-  font-size: 1.13333em;
-  line-height: 1.41176em;
+  font-size: 1em;
+  line-height: 1.6em;
 }
 
 /* line 38, ../sass/_typography.scss */
 h1.title {
-  font-size: 2.6em;
-  line-height: 1.23077em;
+  font-size: 2em;
+  line-height: 1.6em;
   color: #1f83b5;
   padding-top: 0.24em;
   padding-bottom: 0.24em;
@@ -366,26 +366,26 @@ header.main {
   }
 }
 @media (min-width: 51.5625em) {
-  /* line 40, ../sass/_grid.scss */
+  /* line 41, ../sass/_grid.scss */
   .main_content {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 43, ../sass/_grid.scss */
+  /* line 44, ../sass/_grid.scss */
   .right_sidebar {
     width: 32.20339%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 51, ../sass/_grid.scss */
+/* line 52, ../sass/_grid.scss */
 .float-left {
   float: left;
 }
 
-/* line 54, ../sass/_grid.scss */
+/* line 55, ../sass/_grid.scss */
 .float-right {
   float: right;
 }
@@ -460,6 +460,39 @@ article a {
 /* line 17, ../sass/_article.scss */
 article.home {
   padding-bottom: 1.8em;
+}
+
+/* line 23, ../sass/_article.scss */
+.prev-link, .next-link {
+  display: block;
+  font-size: 15px;
+  opacity: 0.8;
+  overflow: hidden;
+  padding: 50px;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  top: 45%;
+  white-space: nowrap;
+  width: 250px;
+  z-index: 2;
+}
+
+/* line 38, ../sass/_article.scss */
+.next-link {
+  left: 0;
+  padding: 16px;
+  transform: rotate(-90deg);
+  width: 250px;
+}
+
+/* line 44, ../sass/_article.scss */
+.prev-link {
+  right: 0;
+  padding: 16px;
+  transform: rotate(90deg);
+  width: 250px;
 }
 
 /* line 1, ../sass/_footer.scss */

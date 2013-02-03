@@ -19,3 +19,31 @@ article {
 	}
 	
 }
+
+.prev-link, .next-link {
+	display: block;
+	font-size: $base-font-size;
+	opacity: 0.8;
+	overflow: hidden;
+	padding: 50px;
+	position: fixed;
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	top: 45%;
+	white-space: nowrap;
+	width: 250px;
+	z-index: 2;
+}
+.next-link {
+  left: 0;
+  padding: 16px;
+  transform: rotate(-90deg);
+  width: 250px;
+}
+.prev-link {
+  right: 0;
+  padding: 16px;
+  transform: rotate(90deg);
+  width: 250px;
+}

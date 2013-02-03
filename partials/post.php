@@ -8,9 +8,6 @@
   		              __('% Comments', 'zoomingintheme'));
   ?></span> - <?php the_category(', '); ?>
 		</div>
-		<div class="float-right">
-			<a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">G+</a> | <a href="#">LinkedIn</a>
-		</div>
 	</header>
 	<?php the_content(__('Read More&hellip;','zoomingintheme')); ?>
 </article>
