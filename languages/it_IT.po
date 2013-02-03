@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ZoomingIn Theme\n"
-"POT-Creation-Date: 2013-01-30 20:22+1000\n"
-"PO-Revision-Date: 2013-01-30 20:23+1000\n"
+"POT-Creation-Date: 2013-02-03 20:35+1000\n"
+"PO-Revision-Date: 2013-02-03 20:36+1000\n"
 "Last-Translator: Maurizio\n"
 "Language-Team: Maurizio Napoleoni <napy84@gmail.com>\n"
 "Language: English\n"
@@ -40,32 +40,36 @@ msgstr "Commenti chiusi"
 msgid "Right Sidebar"
 msgstr "Colonna destra"
 
-#: ../functions.php:55
+#: ../functions.php:28
+msgid "Footer Sidebar"
+msgstr "Sidebar a pié di pagina"
+
+#: ../functions.php:98
 msgid "Pingback:"
 msgstr "Pingback:"
 
-#: ../functions.php:55
+#: ../functions.php:98
 msgid "(Edit)"
 msgstr "(Modifica)"
 
-#: ../functions.php:70
+#: ../functions.php:113
 msgid "Post author"
 msgstr "Autore del post"
 
-#: ../functions.php:76
+#: ../functions.php:119
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s alle %2$s"
 
-#: ../functions.php:82
+#: ../functions.php:125
 msgid "Your comment is awaiting moderation."
 msgstr "Il tuo commento apparirà tra poco. Ora è in coda per la moderazione."
 
-#: ../functions.php:87
+#: ../functions.php:130
 msgid "Edit"
 msgstr "Modifica"
 
-#: ../functions.php:91
+#: ../functions.php:134
 msgid "Reply"
 msgstr "Rispondi"
 
@@ -90,6 +94,6 @@ msgstr "Un commento"
 msgid "% Comments"
 msgstr "% Commenti"
 
-#: ../partials/post.php:15
+#: ../partials/post.php:12
 msgid "Read More&hellip;"
 msgstr "Continua a leggere&hellip;"

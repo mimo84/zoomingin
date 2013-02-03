@@ -58,6 +58,9 @@ add_theme_support( 'custom-header', $defaults );
  * Since I don't like having the more taking you at the
  * middle of the article I wrote this functionality to 
  * remove the ID from the anchor of the "more" link.
+ * 
+ * @to-do: add an option to activate/disactivate this functionality
+ *
  */
 add_filter('the_content_more_link', 'more_link_top');
 function more_link_top($more_link) {
