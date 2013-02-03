@@ -32,10 +32,12 @@ function zoomingin_sidebars() {
 		'before_title' 	=> '<h4 class="side-title">',
 		'after_title' 	=> '</h4>',
 	));
-
-
 }
 
+/**
+ * Add basic support for the header image
+ * using the built-in WordPress functionality
+ */
 $defaults = array(
 	'default-image'          => '',
 	'random-default'         => false,
@@ -51,6 +53,17 @@ $defaults = array(
 	'admin-preview-callback' => '',
 );
 add_theme_support( 'custom-header', $defaults );
+
+/**
+ * Since I don't like having the more taking you at the
+ * middle of the article I wrote this functionality to 
+ * remove the ID from the anchor of the "more" link.
+ */
+add_filter('the_content_more_link', 'more_link_top');
+function more_link_top($more_link) {
+	$more_link = preg_replace( '|#more-[0-9]+|', '', $more_link );
+	return $more_link;
+}
 
 /**
  * Add custom styles for non-administration
