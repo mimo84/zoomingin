@@ -6,8 +6,9 @@
 			if (have_posts()) : the_post(); ?>
 				<?php get_template_part('partials/post'); ?>
 			<?php endif; ?>
+			<?php comments_template(); ?>
 		</div><!-- End Main Content -->
-		<?php comments_template(); ?>
+		
 	</div><!-- End Container -->
 	
 <?php get_footer(); ?>
