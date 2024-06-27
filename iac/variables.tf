@@ -9,3 +9,7 @@ variable "linode_root_password" {
     description = "The root password to access linode instance"
     sensitive   = true
 }
+
+variable "linode_root_ssh_pubkey" {
+    description = "Public SSH keyfile for root account"
+}
