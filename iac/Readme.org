@@ -1,0 +1,78 @@
+* IAC Project for Linode VPS
+
+** Terraform
+
+We use terraform to start up a Linode VPS. So this project assumes that Terraform is installed in your system.
+The instructions are available here: [[https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli#install-terraform]]
+I am using for this example the smallest vps with shared CPU available on Linode.
+
+*** Terraform provides in use
+
+[[https://registry.terraform.io/providers/linode/linode/latest]] Linode Provider
+
+** Dotenvx
+
+From the creators of =dotenv=, this is a project that allows for injecting in the terminal the environment variables that we
+need without having to source.
+
+*** Install
+We can install it globally in our system by doing:
+
+#+begin_src sh
+npm install @dotenvx/dotenvx --save -g
+#+end_src
+
+*** Use
+
+For use in the terminal, and in our case to have =terraform= being able to access
+the variables we can do:
+
+#+begin_src sh
+dotenvx run --quiet -- sh -c 'echo $my_var'
+#+end_src
+
+** Linode API Token
+
+We need an API_TOKEN to run this project. The token needs the following permissions:
+
+1. Linodes (Read/Write)
+2. Events (Read/Write)
+
+* Run the project
+
+** Terraform init
+
+The first time that this project is run on your machine is necessary to run:
+
+#+begin_src sh
+terraform init
+#+end_src
+
+** Environment variables
+
+There is an =.env.example= file.
+Duplicate the file to be named =.env= and replace the values with your own.
+
+** Terraform plan
+
+To see what is going to be created run the command:
+
+#+begin_src sh
+terraform plan
+#+end_src
+
+** Terraform apply
+
+To create the instance on Linode, run the =apply= command:
+
+#+begin_src sh
+terraform apply
+#+end_src
+
+** Terraform Destroy
+
+When you are done with your machine, just run =destroy= to delete the resources that are no longer required.
+
+#+begin_src
+terraform destroy
+#+end_src
