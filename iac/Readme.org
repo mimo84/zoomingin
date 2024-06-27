@@ -38,6 +38,16 @@ We need an API_TOKEN to run this project. The token needs the following permissi
 1. Linodes (Read/Write)
 2. Events (Read/Write)
 
+** SSH Key
+
+In order to access the server, we make use of an SSH key, which needs to be generated in your local prior to running
+terraform.
+
+To generate the key use the following command. Ensure to save the file under: =~/.ssh/id_linode_ed25519=.
+
+#+begin_src
+ssh-keygen -t ed25519
+#+end_src
 * Run the project
 
 ** Terraform init
@@ -75,4 +85,12 @@ When you are done with your machine, just run =destroy= to delete the resources 
 
 #+begin_src
 terraform destroy
+#+end_src
+
+* Access the server
+
+Once the server has been created, also an SSH key has been uploaded and can be used to access the server.
+
+#+begin_src sh
+ssh -i ~/.ssh/id_linode_ed25519 root@178.79.154.54
 #+end_src
