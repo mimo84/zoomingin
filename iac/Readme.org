@@ -10,33 +10,13 @@ I am using for this example the smallest vps with shared CPU available on Linode
 
 [[https://registry.terraform.io/providers/linode/linode/latest]] Linode Provider
 
-** Dotenvx
-
-From the creators of =dotenv=, this is a project that allows for injecting in the terminal the environment variables that we
-need without having to source.
-
-*** Install
-We can install it globally in our system by doing:
-
-#+begin_src sh
-npm install @dotenvx/dotenvx --save -g
-#+end_src
-
-*** Use
-
-For use in the terminal, and in our case to have =terraform= being able to access
-the variables we can do:
-
-#+begin_src sh
-dotenvx run --quiet -- sh -c 'echo $my_var'
-#+end_src
-
 ** Linode API Token
 
 We need an API_TOKEN to run this project. The token needs the following permissions:
 
 1. Linodes (Read/Write)
 2. Events (Read/Write)
+3. Domains (Read/Write)
 
 ** SSH Key
 
@@ -60,7 +40,7 @@ terraform init
 
 ** Environment variables
 
-There is an =.env.example= file.
+There is an =.terraform.tfvars.example= file.
 Duplicate the file to be named =.env= and replace the values with your own.
 
 ** Terraform plan
