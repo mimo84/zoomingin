@@ -1,0 +1,3 @@
+linode_access_token    = "<linode-token with linode, events permissions>"
+linode_root_password   = "<password>"
+linode_root_ssh_pubkey = "~/.ssh/id_linode_ed25519"
