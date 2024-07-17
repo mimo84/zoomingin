@@ -24,6 +24,34 @@ resource "linode_instance" "web_server" {
   authorized_keys = [chomp(data.tls_public_key.private_key_openssh-linode.public_key_openssh)]
   tags            = ["terraform"]
   root_pass       = var.linode_root_password
+
+  provisioner "file" {
+    source      = "./provision.sh"
+    destination = "~/provision.sh"
+
+    connection {
+      type        = "ssh"
+      user        = "root"
+      private_key = tls_private_key.ed25519-linode.private_key_pem
+      host        = self.ip_address
+    }
+  }
+
+
+  provisioner "remote-exec" {
+    inline = [
+      "chmod +x ~/provision.sh",
+      "~/provision.sh"
+    ]
+
+    connection {
+      type        = "ssh"
+      user        = "root"
+      private_key = tls_private_key.ed25519-linode.private_key_pem
+      host        = self.ip_address
+    }
+  }
+
 }
 
 resource "linode_domain" "zoomingin_domain" {
